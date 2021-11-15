@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mailer</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- FontAwesome CSS -->
+    <script
+      src="https://kit.fontawesome.com/5ec12502e0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        // let user = prompt("Enter your UserName address");
+        // let username = document.getElementById("username");
+        // username.innerHTML=user;
+
+    </script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- main start -->
+
+    <main class="compose-page" id="content">
+
+        <section class="user_greet pt-4">
+            <div class="container">
+                <h5 class="text-end">Howdy! 
+                    <a class="btn p-0" href="index.html">
+                        <span id="username">User</span>
+                        <script>
+                            document.write(user);
+                        </script>
+                    </a>
+                </h5>
+            </div>
+        </section>
+      <section class="sec_padding_lg">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h3>Send Mail</h3>
+                    <form action="ComposeServletProcess" name="compose" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="toEmail" placeholder="name@example.com" name="to" />
+                            <label for="toEmail">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="toSubject" placeholder="Password" name="subject" />
+                            <label for="toSubject">Subject</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control toMSG" placeholder="Enter message here" rows="5" id="toMsg" name="message"></textarea>
+                            <label for="toMsg">Message</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success" type="submit">Send <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                <div class="col-md-2"></div>
+            </div>
+      </section>
+    </main>
+
+    <!-- main end -->
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

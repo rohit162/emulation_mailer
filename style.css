@@ -1,0 +1,82 @@
+
+/* ====================================
+import font styles
+==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Josefin Sans';
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+/* ====================================
+ login pages style start
+==================================== */
+
+.sec_padding_lg {
+    padding: 80px 0px;
+}
+
+.tab-pane {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 4px 4px;
+    border-top: 0;
+}
+
+
+/* ====================================
+ Compose pages style start
+==================================== */
+
+
+
+.toMSG {
+    height: 250px !important;
+}
+
+
+/* ====================================
+ inbox style start
+==================================== */
+
+
+
+.mail-actions a {
+    padding: 0px 10px;
+}
+
+
+/* ====================================
+  mail-page style start
+==================================== */
+
+.mail-page {
+    padding: 80px 0px;
+}
+
+
+/* ====================================
+  trash-page style start
+==================================== */
+
+.trash-page {
+    padding: 80px 0px;
+}
+
+table tbody tr td:nth-last-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+table tbody tr td:nth-last-child(1) > * {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
